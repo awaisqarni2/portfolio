@@ -1,0 +1,34 @@
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+Download CV: https://drive.google.com/file/d/1ZR2zzKhJwzrGkma-gXYDTIYIv0pEpXHK/view?usp=sharing
+
+// Grid Best Classes
+    //parent
+        grid
+        md:grid-cols-12
+        grid-rows-[400px_200px]  //widthof row1(400px), row2(200px)
+        auto-rows-[150px] //set width to all rows
+        gap-6"
+    //child
+        col-span-2
+        start-row-2 //element start from row 2
+
+//transition
+transiton //apply on current element changes
+transiton-all //apply on current and all its decendent elements
+duration-200 //200ms
+ease-in-out  //transition effect
+
+//gradient
+bg-gradient-to-tr from-[#5601FC] to-[#DA00E7]
+bg-blue-500/50 rounded-full blur-3xl //mask layer
+bg-gradient-to-r from-[#0E0715]/60 to-transparent //apply left color to right tranparent gradient effect
+backdrop-blur-md //blur backgoround
+
+//custom cursor
+1st we need .png icon of 32x32 // if size is more than that browser will not support it.
+document.querySelector("body").style.cursor = "url('./images/icons/cursor.png'), auto";
+document.querySelectorAll("a, button").forEach((el) => {
+    el.style.cursor = "url('./images/icons/cursor_pointer2.png'), auto";
+});
+

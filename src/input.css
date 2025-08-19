@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+@import "tailwindcss";
+
+.navA {
+  @apply opacity-80 hover:opacity-100 text-white px-2 relative before:content-[''] before:absolute before:left-0 before:top-8 before:h-0.5 before:w-0 before:transition-all before:duration-300 hover:before:w-18 before:text-center hover:before:bg-gradient-to-r before:from-[#cf04d6] before:to-[#8b0be0] hover:from-[#012ffc] hover:to-[#eb02f7d0] before:rounded-full;
+}
+.navA2 {
+  @apply block text-white bg-[#0F0919]/70 rounded-lg text-sm py-2 px-3 text-center mb-2 relative before:content-[''] before:absolute before:left-0 before:top-9 before:h-0.5 before:w-0 before:transition-all before:duration-300 hover:before:w-[100%] before:text-center hover:before:bg-gradient-to-r before:from-[#cf04d6] before:to-[#8b0be0] hover:from-[#012ffc] hover:to-[#eb02f7d0] before:rounded-full;
+}
+.webTools {
+  @apply w-9 h-9 p-1 rounded-full hover:scale-110 bg-white/80 saturate-0 brightness-80 shadow-2xl shadow-white border-0 transition duration-75;
+}
+.myGradient {
+  @apply bg-gradient-to-tr from-[#5601FC] to-[#DA00E7] hover:from-[#012ffc] hover:to-[#eb02f7d0];
+}
+
+button{
+  @apply active:scale-95;
+}
+
+.fa-diamond {
+  background: linear-gradient(to top right, #5601fc, #da00e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer utilities {
+  .text-stroke {
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+  }
+  .text-stroke2 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+  }
+
+  .wave-mask {
+    --mask: radial-gradient(
+          158.52px at 50% calc(100% + 140px),
+          #0000 calc(99% - 4px),
+          #000 calc(101% - 4px) 99%,
+          #0000 101%
+        )
+        calc(50% - 140px) calc(50% - 37px + 0.5px) / 280px 74px repeat-x,
+      radial-gradient(
+          158.52px at 50% -140px,
+          #0000 calc(99% - 4px),
+          #000 calc(101% - 4px) 99%,
+          #0000 101%
+        )
+        50% calc(50% + 37px) / 280px 74px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}
