@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap"
+      rel="stylesheet"
+    />
+    <!-- locomotive  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
+  </head>
+  <body class="relative bg-[#0E0715]">
+    <div
+      class="wrapperDiv relative mx-3 md:mx-20 md:px-2 md:mt-7 mt-4 mb-4"
+      id="wraperDiv"
+      data-scroll-container
+    >
+      <header
+        class="sticky top-3 z-30 bg-white/20 backdrop-blur-md flex flex-col md:flex-row md:items-center md:justify-between px-5 md:py-5 py-4 rounded-2xl shadow-sm shadow-[#463F4B] ring-1 ring-[#68646b] text-white font-medium transition-all duration-300"
+      >
+        <!-- Top row -->
+        <div class="flex justify-between items-center w-full">
+          <div class="logo md:text-lg text-xl">Awais Qarni</div>
+
+          <nav class="hidden md:flex md:justify-between gap-[1vw]">
+            <a class="navA" href="#home">Home</a>
+            <a class="navA" href="#projects">Projects</a>
+            <a class="navA" href="#pricing">Pricing</a>
+            <a class="navA" href="#about">About</a>
+            <a class="navA" href="#contact">Contact</a>
+          </nav>
+
+          <a href="#contact">
+            <button
+              class="hidden lg:flex px-5 py-2 rounded-lg text-white font-medium myGradient shadow-lg shadow-purple-500/30"
+            >
+              Hire me
+            </button>
+          </a>
+
+          <!-- Mobile menu icon -->
+          <button
+            id="menu-btn"
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile dropdown row -->
+        <div
+          id="mobile-menu"
+          class="hidden flex-col justify-center items-center w-full mt-3 md:hidden space-y-3text-lg"
+        >
+          <a class="navA2" href="#home">Home</a>
+          <a class="navA2" href="#recentProjects">Projects</a>
+          <a class="navA2" href="#pricing">Pricing</a>
+          <a class="navA2" href="#about">About</a>
+          <a class="navA2" href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <!-- hello Effect  -->
+      <div
+        data-scroll-section
+        class="absolute -top-7 w-full pt-24 md:pt-22"
+        id="home"
+      >
+        <!-- Colored shadow/overlay -->
+        <div
+          class="absolute w-[60%] z-10 inset-0 h-33 md:h-auto bg-gradient-to-r from-[#0E0715]/60 to-transparen"
+        ></div>
+        <h1
+          class="relative max-w-40 mx-auto md:-left-35 -top-1 md:-top-0 z-0 [transform:scaleX(2)] text-stroke md:text-stroke2 text-[#0E0715] text-4xl md:text-8xl font-bold text-center mb-4 opacity-45 shadow-sm shadow[#392855]"
+        >
+          HELLO
+        </h1>
+      </div>
+
+      <main data-scroll-section class="text-white max-w-[100%]">
+        <!-- Hero Section -->
+        <section
+          class="relative grid h-full md:grid-cols-2 pt-12 md:pt-30 items-end"
+        >
+          <!-- Radial shadow layer -->
+          <div
+            class="absolute hidden md:flex md:-left-60 md:-bottom-30 items-center justify-start"
+          >
+            <div class="size-76 z-0 bg-blue-500/50 rounded-full blur-3xl"></div>
+          </div>
+          <div
+            class="scale-110 md:min-w-100 max-w-100 mb-4 md:pb-5 pt-2 md:mx-4 mx-5"
+          >
+            <p class="text-lg text-purple-300">This is Awais Qarni</p>
+            <h1 class="text-4xl md:text-5xl font-bold mt-2">
+              MERN Stack <br />
+              Web Developer
+            </h1>
+            <p class="text-gray-400 mt-3">With 5+ years of experience</p>
+            <div class="flex gap-3 mt-6">
+              <a target="_blank" href="https://wa.me/03075137412">
+                <button
+                  class="px-6 py-3 rounded-lg myGradient shadow-lg shadow-purple-500/30"
+                >
+                  Say Hello
+                </button>
+              </a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZR2zzKhJwzrGkma-gXYDTIYIv0pEpXHK
+              "
+              >
+                <button
+                  class="px-6 py-3 rounded-lg bg-transparent border border-purple-500 hover:bg-gradient-to-tr from-[#5601FC] to-[#DA00E7]"
+                >
+                  Download CV
+                </button>
+              </a>
+            </div>
+            <div
+              class="relative max-w-65 md:mt-6 mt-3 flex items-center bg-white/20 backdrop-blur-md p-3 mb-6 rounded-lg"
+            >
+              <img
+                src="./images/cm_1.jpeg"
+                class="relative left-0 w-9 h-9 rounded-full"
+                alt=""
+              />
+              <img src="./images/cf_2.jpeg" class="relative -left-4 w-9 h-9
+              rounded-full alt="" />
+              <img
+                src="./images/cm_2.jpeg"
+                class="relative -left-8 w-9 h-9 rounded-full"
+                alt=""
+              />
+              <img
+                src="./images/cm_3.jpeg"
+                class="relative -left-12 w-9 h-9 rounded-full"
+                alt=""
+              />
+              <img
+                src="./images/cf_1.jpeg"
+                class="relative -left-16 w-9 h-9 rounded-full"
+                alt=""
+              />
+              <span class="absolute left-36 text-white"
+                ><b>44+</b><br />
+                Recent Clients</span
+              >
+            </div>
+          </div>
+          <div class="relative flex justify-center lg:justify-start">
+            <!-- Radial shadow layer -->
+            <div class="absolute left-2 top-8 flex items-center justify-start">
+              <div
+                class="size-76 z-0 bg-blue-500/40 rounded-full blur-3xl"
+              ></div>
+            </div>
+            <div class="min-w-90 z-10 h-100 md:h-110">
+              <!-- Background image -->
+              <img
+                src="./images/dev_img3.png"
+                alt="Person"
+                class="w-full h-full object-cover"
+              />
+
+              <!-- Text on top -->
+              <div
+                class="absolute bottom-10 left-10 text-white text-5xl font-bold"
+              >
+                I Love Coding
+              </div>
+            </div>
+            <div
+              id="notWorking"
+              class="absolute h-100 md:h-90 flex flex-col gap-3 justify-start md:justify-center right-0"
+            >
+              <img src="./images/tailwind2.png" class="webTools" alt="" />
+              <img src="./images/react2.png" class="webTools" alt="" />
+              <img src="./images/nextJs.png" class="webTools" alt="" />
+              <img src="./images/nodeJs2.png" class="webTools" alt="" />
+              <img src="./images/ai_logo2.png" class="webTools" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Stats -->
+        <section
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 px-2 md:py-1 py-1 text-center rounded-2xl ring-2 ring-[#392855] shadow-sm shadow[#463F4B]"
+        >
+          <div class="bg-[#0F0816] p-6 rounded-xl">
+            <p class="text-3xl font-bold">5+</p>
+            <p class="text-gray-400">Years of experience</p>
+          </div>
+          <div class="bg-[#0F0816] p-6 rounded-xl">
+            <p class="text-3xl font-bold">14</p>
+            <p class="text-gray-400">Award Winner</p>
+          </div>
+          <div class="bg-[#0F0816] p-6 rounded-xl">
+            <p class="text-3xl font-bold">300+</p>
+            <p class="text-gray-400">Project Completed</p>
+          </div>
+          <div class="bg-[#0F0816] p-6 rounded-xl">
+            <p class="text-3xl font-bold">177+</p>
+            <p class="text-gray-400">Happy Clients</p>
+          </div>
+        </section>
+
+        <!-- Recent Work -->
+        <section class="hidden md:block pt-30 h-full" id="projects">
+          <h2 class="text-center text-sm md:text-xl font-medium">
+            RECENT WORK
+          </h2>
+          <h2 class="text-center text-2xl font-bold leading-9">
+            Take a look at my <br />
+            recent
+            <span
+              class="px-3 pb-1 myGradient hover:from-[#012ffc] hover:to-[#eb02f7d0] shadow-lg shadow-purple-500/30"
+              >Web Projects</span
+            >
+          </h2>
+          <div
+            class="mt-8 grid md:grid-cols-12 md:grid-rows-[400px_200px] auto-rows-[150px] gap-6"
+          >
+            <a class="md:col-span-6" href="#"
+              ><img
+                src="./images/web_project1.jpeg"
+                class="rounded-xl w-full h-full object-cover object-left"
+                alt=""
+            /></a>
+            <a class="md:col-span-3" href="#"
+              ><img
+                src="./images/landing_page1.jpg"
+                class="rounded-xl w-full h-full object-cover md:object-left object-top-left"
+                alt=""
+            /></a>
+            <a class="md:col-span-3" href="#"
+              ><img
+                src="./images/landing_page2.jpg"
+                class="rounded-xl w-full h-full object-cover md:object-left object-top-left"
+                alt=""
+            /></a>
+            <a class="md:col-span-4 md:row-start-2" href="#"
+              ><img
+                src="./images/web_project2.jpeg"
+                class="rounded-xl w-full h-full object-cover object-bottom"
+                alt=""
+            /></a>
+            <a class="md:col-span-4" href="#"
+              ><img
+                src="./images/web_project3.jpeg"
+                class="rounded-xl h-full w-full object-cover object-left-top"
+                alt=""
+            /></a>
+            <a class="md:col-span-4 row-start-2" href="#"
+              ><img
+                src="./images/web_project4.jpeg"
+                class="rounded-xl h-full w-full object-cover object-center"
+                alt=""
+            /></a>
+          </div>
+        </section>
+
+        <!-- wave-maks  -->
+        <div
+          class="hidden md:block absolute -left-20 md:top-480 lg:top-465 min-w-400 wave-mask myGradient h-48"
+        ></div>
+
+        <!-- Work Process -->
+        <section
+          class="relative pt-15 md:pt-30 text-white max-w-full"
+          id="resume"
+        >
+          <div class="flex md:flex-row gap-4 flex-col md:items-center mb-4">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-sm md:text-xl font-medium">WORKING PROCESS</h2>
+              <h3 class="inline text-2xl md:text-3xl font-bold">
+                Turning Ideas into Scalable Solutions
+              </h3>
+            </div>
+            <div class="">
+              <p class="text-gray-400">
+                My process covers planning, coding, testing, and deployment,
+                delivering high-performance web solutions.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative grid md:grid-cols-4 lg:gap-6 gap-4 md:mt-8 md:mx-0 mx-4"
+          >
+            <!-- Planning -->
+            <div
+              class="bg-white/20 backdrop-blur-md md:p-6 p-3 rounded-xl text-center hover:scale-105 transition-transform duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-15 md:size-15 p-2 rounded-lg myGradient mx-auto"
+              >
+                <img
+                  class="scale-80"
+                  src="./images/icons/creativity.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="text-lg font-semibold mt-4">Planning</h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Defining goals, scope, and project requirements to ensure a
+                smooth development process.
+              </p>
+            </div>
+
+            <!-- Development -->
+            <div
+              class="relative md:top-15 bg-white/20 backdrop-blur-md md:p-6 p-3 rounded-xl text-center hover:scale-105 transition-transform duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-15 md:size-15 p-2 rounded-lg myGradient mx-auto"
+              >
+                <img class="scale-80" src="./images/icons/code.png" alt="" />
+              </div>
+              <h3 class="text-lg font-semibold mt-4">Development</h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Building responsive, scalable, and maintainable code for
+                front-end and back-end.
+              </p>
+            </div>
+
+            <!-- Testing -->
+            <div
+              class="bg-white/20 backdrop-blur-md md:p-6 p-3 rounded-xl text-center hover:scale-105 transition-transform duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-15 md:size-15 p-2 rounded-lg myGradient mx-auto"
+              >
+                <img class="scale-80" src="./images/icons/search.png" alt="" />
+              </div>
+              <h3 class="text-lg font-semibold mt-4">Testing</h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Debugging, performance tuning, and ensuring cross-browser/device
+                compatibility.
+              </p>
+            </div>
+
+            <!-- Deployment -->
+            <div
+              class="relative md:top-15 bg-white/20 backdrop-blur-md md:p-6 p-3 rounded-xl text-center hover:scale-105 transition-transform duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-15 md:size-16 p-2 rounded-lg myGradient mx-auto"
+              >
+                <img src="./images/icons/deployment.png" alt="" />
+              </div>
+              <h3 class="text-lg font-semibold mt-4">Deployment</h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Launching the site, setting up hosting, and monitoring for
+                smooth performance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- about  -->
+        <div
+          class="flex md:flex-row md:items-center justify-between md:gap-6 flex-col gap-4 pt-15 md:pt-30"
+          id="about"
+        >
+          <div class="w-full">
+            <img src="./images/story.png" alt="" />
+          </div>
+          <div class="">
+            <h2 class="text-sm md:text-lg font-medium">STORY OF AWAIS</h2>
+            <h3 class="inline text-2xl md:text-3xl font-bold mb-5">
+              Development Experiences, Building Connections
+            </h3>
+            <p class="mb-5 mt-3 text-gray-400">
+              I'm a passionate MERN Stack & AI Developer in the making, crafting
+              clean, user-friendly web experiences and experimenting with smart
+              AI solutions. Currently studying BSIT, I'm on a mission to build
+              impactful projects, grow my skills, and take on exciting
+              challenges in tech.
+            </p>
+            <button class="myGradient font-medium text-lg py-2 px-4 rounded-lg">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <section class="relative pt-15 md:pt-30" id="pricing">
+          <!-- Radial shadow layer -->
+          <div
+            class="hidden md:flex absolute md:-right-20 right-0 top-12 items-center justify-start"
+          >
+            <div class="size-76 z-0 bg-blue-500/40 rounded-full blur-3xl"></div>
+          </div>
+          <h2 class="text-sm md:text-lg text-center font-medium mb-2">
+            PRICING PLANE
+          </h2>
+          <h3 class="text-2xl md:text-3xl font-bold text-center">
+            Pricing options that meets your budget and needs
+          </h3>
+
+          <div class="max-w-6xl mt-8 mx-auto px-6 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Hourly Basis -->
+              <div
+                class="bg-white/20 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform"
+              >
+                <h3 class="text-2xl font-bold mb-4">Hourly Basis</h3>
+                <p class="text-4xl font-bold text-purple-400 mb-2">
+                  $15<span class="text-base font-medium text-gray-300"
+                    >/hour</span
+                  >
+                </p>
+                <p class="text-gray-200 mb-6">
+                  Perfect for small tasks, bug fixes, or consultations.
+                </p>
+                <ul class="text-left space-y-3 mb-6">
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> 35 hours max per week
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> Responsive & Modern
+                    Design
+                  </li>
+                  <li><i class="fa-solid fa-diamond"></i> API Integration</li>
+                  <li><i class="fa-solid fa-diamond"></i> Priority Support</li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> 50% upfront payment
+                  </li>
+                </ul>
+                <button
+                  class="myGradient text-white py-2 px-6 rounded-lg font-semibold"
+                >
+                  Start Project
+                </button>
+              </div>
+
+              <!-- Project Based -->
+              <div
+                class="bg-white/20 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform relative"
+              >
+                <span
+                  class="absolute -top-3 right-4 bg-yellow-400 text-black px-3 py-1 text-xs font-bold rounded-full"
+                  >POPULAR</span
+                >
+                <h3 class="text-2xl font-bold mb-4">Project Based</h3>
+                <p class="text-4xl font-bold text-white mb-2">
+                  $300<span class="text-base font-medium text-gray-200"
+                    >/project</span
+                  >
+                </p>
+                <p class="text-gray-200 mb-6">
+                  Ideal for complete websites, dashboards, or e-commerce
+                  projects.
+                </p>
+                <ul class="text-left space-y-3 mb-6">
+                  <li><i class="fa-solid fa-diamond"></i> Full Development</li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> Custom UI/UX Design
+                  </li>
+                  <li><i class="fa-solid fa-diamond"></i> SEO Optimization</li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> 1 Month Free Maintenance
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> 50% upfront payment
+                  </li>
+                </ul>
+                <button
+                  class="myGradient text-white py-2 px-6 rounded-lg font-semibold"
+                >
+                  Start Project
+                </button>
+              </div>
+
+              <!-- Full-Time -->
+              <div
+                class="bg-white/20 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform"
+              >
+                <h3 class="text-2xl font-bold mb-4">Full-Time</h3>
+                <p class="text-4xl font-bold text-purple-400 mb-2">
+                  $1000<span class="text-base font-medium text-gray-300"
+                    >/month</span
+                  >
+                </p>
+                <p class="text-gray-200 mb-6">
+                  Best for long-term collaborations and dedicated work.
+                </p>
+                <ul class="text-left space-y-3 mb-6">
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> Dedicated 40 hrs/week
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> Full-stack Development
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> Continuous Updates
+                  </li>
+                  <li><i class="fa-solid fa-diamond"></i> Priority Support</li>
+                  <li>
+                    <i class="fa-solid fa-diamond"></i> 50% upfront payment
+                  </li>
+                </ul>
+                <button
+                  class="myGradient text-white py-2 px-6 rounded-lg font-semibold"
+                >
+                  Start Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="recentProjects" class="relative">
+          <!-- Radial glow effects -->
+          <div
+            class="hidden md:flex absolute md:-right-20 right-0 top-12 items-center justify-start"
+          >
+            <div
+              class="size-76 z-0 bg-indigo-500/40 rounded-full blur-3xl"
+            ></div>
+          </div>
+          <div
+            class="hidden md:flex absolute md:-left-20 right-0 -top-25 items-center justify-start"
+          >
+            <div
+              class="size-76 z-0 bg-indigo-500/40 rounded-full blur-3xl"
+            ></div>
+          </div>
+
+          <!-- Section Title -->
+          <h2 class="text-3xl font-bold text-center text-white pt-15 md:pt-30">
+            My Latest Web Development Projects
+          </h2>
+          <p class="text-center text-gray-400 mt-2 max-w-2xl mx-auto">
+            A showcase of my recent work in MERN stack and AI-powered
+            applications, blending clean code with creative problem-solving.
+          </p>
+
+          <!-- Projects Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <!-- Project 1 -->
+            <div
+              class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            >
+              <img
+                src="./images/projects/portfolio_site.png"
+                alt="Portfolio Project Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <p class="text-sm text-gray-400">
+                  <i class="fa-regular fa-calendar-check"></i> Feb 2025
+                </p>
+                <h3 class="text-lg font-semibold text-white">
+                  Responsive Portfolio Website
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  A modern, mobile-first portfolio site built with TailwindCSS
+                  and JavaScript.
+                </p>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            >
+              <img
+                src="./images/projects/airBnb.jpeg"
+                alt="MERN Stack Project Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <p class="text-sm text-gray-400">
+                  <i class="fa-regular fa-calendar-check"></i> Jan 2025
+                </p>
+                <h3 class="text-lg font-semibold text-white">
+                  MERN Stack Listing Platform
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  A full-stack listing application with user authentication,
+                  CRUD features, and MongoDB.
+                </p>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            >
+              <img
+                src="./images/projects/ai_chatbot.jpeg"
+                alt="AI Chatbot Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <p class="text-sm text-gray-400">
+                  <i class="fa-regular fa-calendar-check"></i> Dec 2024
+                </p>
+                <h3 class="text-lg font-semibold text-white">
+                  AI Chatbot with OpenAI API
+                </h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  A conversational AI bot that answers questions and suggests
+                  resources using GPT APIs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          id="contact"
+          class="mt-16 myGradient p-10 rounded-xl text-center"
+        >
+          <h2 class="text-3xl font-bold">Have a project? Let's talk.</h2>
+          <p class="text-gray-100 mt-3">
+            Let's chat and turn your ideas into reality.
+          </p>
+
+          <div class="mt-6 flex justify-center gap-4 flex-wrap">
+            <!-- Call Button -->
+            <a
+              href="tel:+923094945097"
+              class="flex items-center gap-2 px-6 py-3 bg-white text-purple-700 rounded-lg font-medium shadow hover:bg-purple-50"
+            >
+              <!-- Phone Icon -->
+              <i class="fa-solid fa-phone text-2lg"></i>
+              Make a Call
+            </a>
+
+            <!-- Email Button -->
+            <a
+              href="mailto:awaisqarnijoyia@email.com"
+              class="flex items-center gap-2 px-6 py-3 bg-white text-purple-700 rounded-lg font-medium shadow hover:bg-purple-50"
+            >
+              <!-- Email Icon -->
+              <i class="fa-regular fa-envelope text-xl"></i>
+              Send Email
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a
+              href="https://wa.me/03075137412"
+              target="_blank"
+              class="flex items-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg font-medium shadow hover:bg-green-600"
+            >
+              <!-- WhatsApp Icon -->
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              WhatsApp
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer
+        data-scroll-section
+        class="flex flex-col lg:flex-row justify-start gap-1 lg:justify-between items-center lg:items-start text-sm lg:text-lg p-2 text-white/80 mt-10 h-25 lg:h-30"
+      >
+        <p class="text-gray-100">@2025 by Awais Qarni. All right reserved</p>
+        <div class="hidden lg:block">Awais Qarni</div>
+        <nav>
+          <a class="navA" href="#home">Home</a>
+          <a class="navA" href="#about">About</a>
+          <a class="navA" href="#contact">Contact</a>
+          <a class="navA" href="#pricing">Pricing</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", () => {
+        // custom cursor
+        document.querySelector("body").style.cursor =
+          "url('./images/icons/cursor.png'), auto";
+        document.querySelectorAll("a, button").forEach((el) => {
+          el.style.cursor = "url('./images/icons/cursor_pointer2.png'), auto";
+        });
+
+        // ✅ Reset browser scroll before Locomotive initializes
+        window.history.scrollRestoration = "manual";
+        window.scrollTo(0, 0);
+
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+          multiplier: 2, // default = 1, higher = faster scroll
+        });
+
+        // ✅ Smooth scroll for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              scroll.scrollTo(target);
+            }
+          });
+        });
+
+        // ✅ Refresh scroll after content loads
+        window.addEventListener("load", () => {
+          scroll.update();
+        });
+
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navLinks = document.querySelectorAll("#mobile-menu a");
+
+        if (!menuBtn || !mobileMenu) {
+          console.error("Menu button or mobile menu not found.");
+          return;
+        }
+
+        let justClicked = false;
+
+        // Toggle menu on menu button click
+        menuBtn.addEventListener("click", () => {
+          justClicked = true;
+          setTimeout(() => (justClicked = false), 300); // Reset after 300ms
+          mobileMenu.classList.toggle("hidden");
+          mobileMenu.classList.toggle("flex-col");
+        });
+
+        // Close menu when any nav link is clicked
+        navLinks.forEach((link) => {
+          link.addEventListener("click", hideMenu);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (event) => {
+          if (
+            !menuBtn.contains(event.target) &&
+            !mobileMenu.contains(event.target)
+          ) {
+            hideMenu();
+          }
+        });
+
+        // Close menu when scrolling (but ignore right after click)
+        window.addEventListener("scroll", () => {
+          if (!justClicked) {
+            hideMenu();
+            menuBtn.blur();
+          }
+        });
+
+        // Helper function
+        function hideMenu() {
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.remove("flex-col");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
