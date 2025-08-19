@@ -41,4 +41,4 @@ document.querySelectorAll("a, button").forEach((el) => {
     Configure:
         Base directory → portfolio
         Build command → npm run build
-        Publish directory → portfolio/dist
+        Publish directory → src  //where netlify find index.html
