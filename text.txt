@@ -32,3 +32,13 @@ document.querySelectorAll("a, button").forEach((el) => {
     el.style.cursor = "url('./images/icons/cursor_pointer2.png'), auto";
 });
 
+//Delopy site on netlify
+1."build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify" //add it into script of pakage.json
+
+2. Deployment Flow
+    Push your repo with .gitignore updated (so output.css is ignored).
+    Connect repo to Netlify.
+    Configure:
+        Base directory → portfolio
+        Build command → npm run build
+        Publish directory → portfolio/dist
