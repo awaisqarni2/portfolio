@@ -17,7 +17,7 @@ build/
 public/build/
 
 # Ignore Tailwind compiled CSS in src
-src/output.css
+src/input.css
 
 # OS-specific
 .DS_Store
